@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
 import './App.css'
-import List from './components/List'
 import { AiFillDelete } from "react-icons/ai";
 import { MdDataSaverOn } from "react-icons/md";
 
@@ -54,19 +53,19 @@ setList(JSON.parse(savedList));
 
 
   return (
-    <div className='bg-background w-full min-h-dvh flex justify-center items-center flex-col pt-6 pb-6'>
-        <div className='max-w-5xl min-h-96 border-2 border-secundary p-6 rounded-xl flex flex-col gap-y-8'>
+    <div className='bg-background w-full  min-h-dvh flex justify-center items-center flex-col pt-6 pb-6'>
+        <div className=' max-w-full min-h-96 border-2 border-secundary p-6 rounded-xl flex flex-col gap-y-8'>
             <div className='flex justify-center gap-8'>
-               <input ref={$inputref}  type="text" placeholder='Digite uma tarefa!' className='max-w-80 px-12 py-1 border-2 text-primary text-center outline-none border-secundary bg-secundary'/>
-               <button onClick={handlevalue} className='min-w-36 max-w-26 px-8 bg-red-500 border-2 border-secundary bg-secundary text-primary capitalize hover:scale-110 ease-in-out duration-300 rounded-lg'>enviar</button>
+               <input ref={$inputref}  type="text" placeholder='Digite uma tarefa!' className='w-full max-w-80 placeholder:text-xs px-12 py-1 border-2 text-primary text-center outline-none border-secundary bg-secundary'/>
+               <button onClick={handlevalue} className='w-full  max-w-52 px-8 bg-red-500 border-2 border-secundary bg-secundary text-primary capitalize hover:scale-110 ease-in-out duration-300 rounded-lg'>enviar</button>
             </div>
 
-            <div className='flex flex-col justify-center items-center '>
+            <div className='flex flex-col justify-center items-center w-full max-w-5xl'>
               {list && 
               list.map((iten, index)=>(
-                <div  key={index} className='w-full justify-center items-center  p-2 border-2 border-gray-300 border-b-1 flex justify-center items-center relative'>
-                   <ul>
-                     <li className='text-secundary truncate capitalize'>
+                <div  key={index} className='w-full  max-w-full justify-center items-center  p-2 border-2 border-gray-300 border-b-1 flex justify-center items-center relative'>
+                   <ul className='truncate'>
+                     <li className='text-secundary  capitalize text-sm'>
                         {iten}
                      </li>
                    </ul>
