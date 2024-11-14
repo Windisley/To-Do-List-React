@@ -25,19 +25,3 @@ dist-ssr
 *.sln
 *.sw?
 
-Calculadora/
-CarContext/
-E-commerce/
-Entendendo_algo/
-Lading_page/
-OnePiece_route/
-api/
-aula1/
-    aula_usecontext/
-    cronometro/
-    hooks/
-    loadcircle/
-    login_react/
-    menu_hamburguer/
-    portfolio_react/
-    shadow/
